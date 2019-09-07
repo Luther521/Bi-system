@@ -10,9 +10,9 @@ html{
     font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
 }
 body{
-    font-size: 1.4rem; 
-    line-height: 1.5; 
-    color: #333333; 
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #333333;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -162,6 +162,7 @@ ins, a {
 .text-light{ color: $light}
 .text-dark{ color: $dark}
 .text-white{ color: $white;}
+.text-red{ color: $red;}
 /* font-size */
 .f0 { font-size: 0; }
 .f10 { font-size: 10px; }
@@ -171,6 +172,7 @@ ins, a {
 .f16 { font-size: 16px; }
 .f18 { font-size: 18px; }
 .f20 { font-size: 20px; }
+.f22 { font-size: 22px; }
 .f24 { font-size: 24px; }
 .f26 { font-size: 26px; }
 .f30 { font-size: 30px; }
@@ -229,9 +231,9 @@ ins, a {
 /* 单行文字溢出虚点显 示*/
 .ell { text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
 /* css3过渡动画效果 */
-.trans { 
-    -webkit-transition: all 0.3s;   
-    transition: all 0.3s; 
+.trans {
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
 }
 /* 无框文本框文本域 */
 .bd-none { border: 0; outline: none; }
@@ -286,4 +288,55 @@ a[href^="http"]:empty::before {content: attr(href);}
 // 覆盖进度条样式
 #nprogress .bar{
     background: #f1f1f1 !important;
+}
+// 上传样式
+.import-file{
+    display: inline-block;
+    padding: 9px 15px;
+    margin-left: 10px;
+    font-size: 12px;
+    border-radius: 1px;
+    color: #fff;
+    border: 1px solid transparent;
+    background-color: #4099E6;
+    border-color: #4099E6;
+    line-height: 1;
+    input{
+        position: absolute;
+        font-size: 0;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: .01;
+        filter: Alpha(opacity=1);
+        cursor: pointer;
+    }
+}
+// 自定义卡片样式
+.w-card{
+  box-shadow:0px 0px 10px 0px rgba(0,0,0,0.06);
+  border-radius:8px;
+  background-color: #fff;
+  overflow: hidden;
+  &.search-card{
+    padding: 20px 30px 0 30px;
+    border:1px solid rgba(211,217,233,1);
+  }
+}
+// flex
+.flex{
+  display: flex;
+}
+.flex-center{
+  justify-content: center;
+}
+.flex-align-center{
+  align-items: center;
+}
+.flex-1{
+  flex: 1;
+}
+.flex-2{
+  flex:2;
 }

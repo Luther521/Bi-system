@@ -1,0 +1,191 @@
+// cover some element-ui styles
+
+.el-breadcrumb__inner,
+.el-breadcrumb__inner a {
+  font-weight: 400 !important;
+}
+
+.el-upload {
+  input[type="file"] {
+    display: none !important;
+  }
+}
+
+.el-upload__input {
+  display: none;
+}
+
+.cell {
+  .el-tag {
+    margin-right: 0px;
+  }
+}
+
+.small-padding {
+  .cell {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+.fixed-width {
+  .el-button--mini {
+    padding: 7px 10px;
+    width: 60px;
+  }
+}
+
+.status-col {
+  .cell {
+    padding: 0 10px;
+    text-align: center;
+
+    .el-tag {
+      margin-right: 0px;
+    }
+  }
+}
+
+// to fixed https://github.com/ElemeFE/element/issues/2461
+.el-dialog {
+  transform: none;
+  left: 0;
+  position: relative;
+  margin: 0 auto;
+}
+
+// refine element ui upload
+.upload-container {
+  .el-upload {
+    width: 100%;
+
+    .el-upload-dragger {
+      width: 100%;
+      height: 200px;
+    }
+  }
+}
+
+// dropdown
+.el-dropdown-menu {
+  a {
+    display: block
+  }
+}
+
+// fix date-picker ui bug in filter-item
+.el-range-editor.el-input__inner {
+  display: inline-flex !important;
+}
+
+#app .sidebar-container .svg-icon{
+  color: #3182c6;
+  margin-right: 20px;
+}
+.menu-wrapper{
+  border-bottom: 1px solid #00396F;
+  &.nest-menu{
+    border-color: #022D58;
+  }
+}
+.el-menu-item,.el-submenu__title,.el-submenu .el-menu-item{
+  height: 62px;
+  line-height: 62px;
+}
+
+#app .sidebar-container .submenu-title-noDropdown.is-active,#app .sidebar-container .el-submenu .el-menu-item.is-active{
+  color: #FF414E !important;
+  background-color: #EEF5FD !important;
+  .svg-icon{
+    color: #FF414E !important;
+  }
+  &:hover{
+    background-color: #EEF5FD !important;
+  }
+  &:before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    content: '';
+    display: block;
+    width: 4px;
+    height: 100%;
+    background-color: #FF414E;
+  }
+ }
+ .el-breadcrumb__inner.is-link,.el-breadcrumb__separator, .el-breadcrumb__inner a{
+   color: #001E3C;
+ }
+.ruleForm{
+  .el-form-item__label{
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 16px;
+  }
+}
+.ruleForm{
+  .el-form-item__label{
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 16px;
+  }
+}
+.form-inline{
+  .el-date-editor.el-input, .el-date-editor.el-input__inner,.el-input{
+    width: 200px;
+  }
+  .el-range-editor.el-input,.el-range-editor.el-input__inner{
+    width: 245px;
+  }
+  .el-range-editor--medium .el-range-separator{
+    width: 24px;
+  }
+  .el-form-item__label{
+    font-size: 13px;
+    padding-right: 0;
+    font-weight: normal;
+    color: $primary;
+    text-align: left;
+  }
+  .el-form-item{
+    margin-right: 50px;
+    margin-bottom: 20px;
+  }
+}
+.el-table{
+  color: $primary;
+}
+.el-table--border th, .el-table--border td{
+ border-color: #D4DBEA !important;
+}
+.el-table--group, .el-table--border{
+  border: none;
+}
+ .el-table::before{
+  background-color: #D4DBEA;
+}
+.el-table--group::after, .el-table--border::after{
+  content: none;
+}
+.el-table th div{
+  color: #848E98;
+  font-weight: normal;
+}
+.el-table--border th:nth-last-child(2){
+  border-right: none;
+}
+.el-table--border th:last-child, .el-table--border td:last-child{
+  border-right: none;
+}
+.el-pagination.is-background .el-pager li:not(.disabled).active{
+  background-color: #278DEC;
+}
+.el-pagination.is-background .btn-prev, .el-pagination.is-background .btn-next{
+  padding: 0 10px;
+}
+
+#app .sidebar-container .svg-icon{
+  font-size: 20px;
+  vertical-align: -0.25em;
+}
